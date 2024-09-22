@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation App</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="container">
+            <!-- motivational quote -->
+            <p>"<%= quote  %>"</p>
+            <div class="header">
+                <!-- name of author -->
+                <p>-<%= author %></p>
+            </div>
+        </div>
+
+     </div>
+     <div class="cat">
+     <form id="quoteForm" method="post" action="/getQuote">
+        <input type="text" id="category" name="category" placeholder="Enter a category" required />
+        <button type="submit">Get Quote</button>
+    </form>
+</div>
+</div>
+
+    <script>
+       
+       document.getElementById("quoteForm").addEventListener("submit", function(e){
+        const category = document.getElementById("category").value;
+        if(category === ""){
+            e.preventDefault();
+            alert("Please enter a category!")
+        }
+       });
+        
+      </script>
+</body>
+</html>

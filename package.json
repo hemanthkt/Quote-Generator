@@ -1,0 +1,17 @@
+{
+  "name": "motivation-app",
+  "version": "1.0.0",
+  "description": "motivation app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hemanth",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  }
+}
